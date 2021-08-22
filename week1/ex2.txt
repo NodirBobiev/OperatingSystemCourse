@@ -1,0 +1,61 @@
+    1  sudo apt-get update
+    2  sudo apt-get upgrade
+    3  sudo apt-get sudo
+    4  sudo apt-get update
+    5  sudo apt-get dist-upgrade
+    6  help
+    7  mkdir "new"
+    8  cd new
+    9  cat one.text
+   10  touch one.txt
+   11  cat > one.txt
+   12  ls
+   13  cat one.txt
+   14  sudo apt-get update
+   15  sudo apt-get upgrade
+   16  ls
+   17  pwd
+   18  ls
+   19  cd new
+   20  ls
+   21  mkdir new2
+   22  ls
+   23  cd /mnt/c
+   24  ls
+   25  cd ..
+   26  ls
+   27  cd ..
+   28  ls]
+   29  ls
+   30  cd home
+   31  ls
+   32  cd nodir
+   33  ls
+   34  mkdir OperatingSystem
+   35  ls
+   36  cd OperatingSystem
+   37  touch ex1.txt
+   38  cat ex1.txt
+   39  cat > ex1.txt
+   40  cat ex1.txt
+   41  cat > ex1.txt
+   42  cat ex1.txt
+   43  touch test.txt
+   44  ex1.txt > text.txt
+   45  ls "/usr/bin"
+   46  ls "/usr/bin" | sort -r > test.txt
+   47  cat test.txt
+   48  grep gcc test.txt > ex1.txt
+   49  cat test.txt
+   50  cat ex1.txt
+   51  ls
+   52  ls test.txt
+   53  cat test.txt
+   54  grep gcc test.txt
+   55  cat test.txt
+   56  grep "gcc" test.txt
+   57  grep apt test.txt
+   58  grep gpg test.txt > ex1.txt
+   59  cat ex1.txt
+   60  touch ex2.txt
+   61  history > ex2.txt
