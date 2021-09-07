@@ -1,0 +1,68 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <time.h>
+struct LinkedList
+{
+	int val;
+	struct LinkedList *next, *prev;
+};
+void print_list( struct LinkedList *node )
+{
+	printf("%d ", node->val);
+	if( node->next != NULL )
+	{
+		print_list(node->next);
+	}
+}
+void insert_node( struct LinkedList *node, int newVal )
+{
+	struct LinkedList* newNode = (struct LinkedList*) malloc(sizeof(struct LinkedList));
+	newNode->val = newVal;
+	newNode->next = NULL;
+	newNode->prev = node;
+	node->next = newNode;
+}
+void delete_node( struct LinkedList *node )
+{
+	if( node->prev != NULL && node->next != NULL )
+	{
+		node->prev->next = node->next;
+		node->next->prev = node->prev;
+	}
+	else if( node->prev != NULL )
+	{
+		node->prev->next = NULL;
+	}
+	else if( node->next != NULL )
+	{
+		node->next->prev = NULL;
+	}
+	free( node );
+}
+int main()
+{
+	srand(time(0));
+	int n;
+	printf("Enter the size of Linked List: ");
+	scanf("%d", &n);
+	struct LinkedList *head = NULL, *cur = NULL;
+	for( int i = 0; i < n; i ++ )
+	{
+		int val = rand() % (n+1);
+		if( i )
+		{
+			insert_node(cur, val);
+			cur = cur->next;
+		}
+		else
+		{
+			head = (struct LinkedList*) malloc(sizeof(struct LinkedList));
+			head->prev = NULL;
+			head->next = NULL;
+			cur = head;
+		}
+	}
+	print_list(head);
+	printf("\n");
+		return 0;
+}
