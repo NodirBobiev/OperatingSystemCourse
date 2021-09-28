@@ -166,6 +166,7 @@ void animate()
     Author: Nodir Bobiev\n\
     Organization: Innopolis University\n\
     email: n.bobiev@innoopolis.university\n\
+    Task: Shortest Job Next Algorithm (Lab #6)\n\
 \n";
     int size = strlen(textAnimation);
     for( int i = 0; i < size; i ++ ){
@@ -192,6 +193,9 @@ int main()
 		int at = rand() % (i + 5);
 		int bt = rand() % 8 + 1;
 		printf("P%-5d%-6d%-6d\n", id, at, bt);
+
+		//printf("P%-5d", id); scanf("%d %d", &at, &bt);
+
 		AddToHeap( heapArrival, CreateNewProcess(id, at, bt) );
 	}
 	int curTime = 0, sumTAT = 0, sumWT = 0, nProcessed = 0;

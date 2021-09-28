@@ -5,6 +5,7 @@
 int main()
 {
 	srand(time(0));
+	printf("--- First In First out algorithm ---\n");
 	printf("Enter number of processes: ");
 	int nProcess;
 	scanf("%d", &nProcess);
@@ -23,6 +24,8 @@ int main()
 	for( int i = 0; i < nProcess; i ++ )
 	{
 		printf("P%-6d%-6d%-6d\n", i, arrivalTime[i], burstTime[i]);
+
+        //printf("P%-6d", i); scanf("%d %d", arrivalTime+i, burstTime + i );
 	}
 
 	// Bubble sort to sort the processes based on the arrival time.
