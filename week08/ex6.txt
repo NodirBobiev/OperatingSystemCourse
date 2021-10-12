@@ -1,0 +1,2 @@
+8KB = 2^13B - 13 bits for an address within a page.
+The number of virtual pages is 2^16/2^13, which is 2^3=8.
