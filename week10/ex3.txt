@@ -1,0 +1,4 @@
+-rw-rw-r-- 1 shohjahon shohjahon 10 окт 26 15:02 _ex3.txt
+-rw-rw-r-- 1 shohjahon shohjahon 10 окт 26 15:02 _ex3.txt
+-rwxrw-rwx 1 shohjahon shohjahon 10 окт 26 15:02 _ex3.txt
+-rwxrwxrwx 1 shohjahon shohjahon 10 окт 26 15:02 _ex3.txt
